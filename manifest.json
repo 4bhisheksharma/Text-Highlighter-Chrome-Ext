@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name": "Text Highlighter",
+    "version": "1.0",
+    "description": "Highlight selected text on a webpage and keep it saved.",
+    "permissions": ["storage", "scripting", "activeTab"],
+    "host_permissions": ["http://*/*", "https://*/*"],  
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "/assets/icon.png",
+        "48": "/assets/icon.png",
+        "128": "/assets/icon.png"
+      }
+    },
+    "background": {
+      "service_worker": "/scripts/background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["http://*/*", "https://*/*"],
+        "js": ["/scripts/content.js"],
+        "css": ["/styles/style.css"]
+      }
+    ]
+  }
+  
