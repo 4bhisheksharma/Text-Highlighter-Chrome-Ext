@@ -14,3 +14,5 @@
 ## Usage
 - Select text and press **Enable Highlight**.
 - To remove highlights, press **Clear Highlights**.
+
+_This extension is currently in active development. Some bugs may be present, and ongoing updates will be made to improve functionality and stability._
